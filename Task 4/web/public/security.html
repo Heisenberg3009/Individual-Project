@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>
+            Smart Lighting System
+        </title>
+        <style>
+          h1 {text-align: center;}
+          h5 {text-align: center;}
+          table, th, td {
+            border:1px solid black;
+          }
+          </style>
+    </head>
+    <body>
+        <br>
+        <h1><u>Select Security Protection</u></h1><br>
+        <h5><u>Double Click to Change Status</u></h5><br>
+        <table id="devices" class="table">
+            <thead>
+              <tr>
+                <th>Type of Security</th>
+                <th>Switch</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Moving Door 1</td>
+                <td><button onclick="changeStatus1()">Switch</button></td>
+                <td id="demo1"></td>
+              </tr>
+              <tr>
+                <td>Moving Door 2</td>
+                <td><button onclick="changeStatus2()">Switch</button></td>
+                <td id="demo2"></td>
+              </tr>
+              <tr>
+                <td>Moving Door 3</td>
+                <td><button onclick="changeStatus3()">Switch</button></td>
+                <td id="demo3"></td>
+              </tr>
+              <tr>
+                <td>Revolving Door 1</td>
+                <td><button onclick="changeStatus4()">Switch</button></td>
+                <td id="demo4"></td>
+              </tr>
+              <tr>
+                <td>Revolving Door 2</td>
+                <td><button onclick="changeStatus5()">Switch</button></td>
+                <td id="demo5"></td>
+              </tr>
+              <tr>
+                <td>Security Camera 1</td>
+                <td><button onclick="changeStatus6()">Switch</button></td>
+                <td id="demo6"></td>
+              </tr>
+              <tr>
+                <td>Security Camera 2</td>
+                <td><button onclick="changeStatus7()">Switch</button></td>
+                <td id="demo7"></td>
+              </tr>
+              <tr>
+                <td>Security Camera 3</td>
+                <td><button onclick="changeStatus8()">Switch</button></td>
+                <td id="demo8"></td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <script>
+            function changeStatus1() 
+            {
+             var text = document.getElementById("demo1");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus2() 
+            {
+             var text = document.getElementById("demo2");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus3() 
+            {
+             var text = document.getElementById("demo3");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus4() 
+            {
+             var text = document.getElementById("demo4");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus5() 
+            {
+             var text = document.getElementById("demo5");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus6() 
+            {
+             var text = document.getElementById("demo6");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus7() 
+            {
+             var text = document.getElementById("demo7");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            function changeStatus8() 
+            {
+             var text = document.getElementById("demo8");
+            if (text.style.display === "none") {
+            text.style.display = "block";
+            text.innerHTML = "Status: On";
+            } 
+            else {
+                    text.style.display = "none";
+                 }
+            }
+            </script>
+            
+    </body>
+</html>

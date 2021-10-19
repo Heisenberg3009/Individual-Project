@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <title>
+            Smart Lighting System
+        </title>
+        <style>
+          h1 {text-align: center;}
+          table, th, td {
+            border:1px solid black;
+          }
+          </style>
+    </head>
+    <body>
+        <br>
+        <h1><u>Select Lighting</u></h1><br>
+        <table id="devices" class="table">
+            <thead>
+              <tr>
+                <th>Light</th>
+                <th>Color 1</th>
+                <th>Color 2</th>
+                <th>Color 3</th>
+                <th>Display Color</th>
+              </tr>
+              <tr>
+                <!--Different lights can be selected on the basis of need. New lights can be added too.-->
+                <td>Light 1</td>
+                <!--Different colour can be chosen for each light. New colourss can be added too.-->
+                <td><button onclick="changeColor_LightOne('Blue');">Blue!</button></td>
+                <td><button onclick="changeColor_LightOne('Green');">Green!</button></td>
+                <td><button onclick="changeColor_LightOne('Red');">Red!</button></td>
+                <!--New colour changed to be displayed!-->
+                <td id="demo1"></td>
+              </tr>
+              <tr>
+                <td>Light 2</td>
+                <td><button onclick="changeColor_LightTwo('Blue');">Blue!</button></td>
+                <td><button onclick="changeColor_LightTwo('Green');">Green!</button></td>
+                <td><button onclick="changeColor_LightTwo('Red');">Red!</button></td>
+                <td id="demo2"></td>
+              </tr>
+              <tr>
+                <td>Light 3</td>
+                <td><button onclick="changeColor_LightThree('Blue');">Blue!</button></td>
+                <td><button onclick="changeColor_LightThree('Green');">Green!</button></td>
+                <td><button onclick="changeColor_LightThree('Red');">Red!</button></td>
+                <td id="demo3"></td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        <script>
+          function changeColor_LightOne(newColor) {
+          var elem = document.getElementById('demo1');
+          elem.style.backgroundColor = newColor;}
+
+          function changeColor_LightTwo(newColor) {
+          var elem = document.getElementById('demo2');
+          elem.style.backgroundColor = newColor;}
+
+          function changeColor_LightThree(newColor) {
+          var elem = document.getElementById('demo3');
+          elem.style.backgroundColor = newColor;}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+[
+    {
+      "id": 1,
+      "devicename": "Light 1",
+      "devicetype": "Lighting",
+      "devicenumber": 10001
+    },
+    {
+      "id": 1,
+      "devicename": "Light 2",
+      "devicetype": "Lighting",
+      "devicenumber": 10002
+    },
+    {
+      "id": 1,
+      "devicename": "Light 3",
+      "devicetype": "Lighting",
+      "devicenumber": 10003
+    },
+    {
+      "id": 4,
+      "devicename": "AC 1",
+      "devicetype": "Air Conditioning",
+      "devicenumber": 10004
+    },
+    {
+      "id": 5,
+      "devicename": "AC 2",
+      "devicetype": "Air Conditioning",
+      "devicenumber": 10005
+    },
+    {
+      "id": 6,
+      "devicename": "AC 3",
+      "devicetype": "Air Conditioning",
+      "devicenumber": 10006
+    },
+    {
+      "id": 7,
+      "devicename": "Moving Door 1",
+      "devicetype": "Security",
+      "devicenumber": 10007
+    },
+    {
+      "id": 8,
+      "devicename": "Moving Door 2",
+      "devicetype": "Security",
+      "devicenumber": 10008
+    },
+    {
+      "id": 9,
+      "devicename": "Moving Door 3",
+      "devicetype": "Security",
+      "devicenumber": 10009
+    },
+    {
+      "id": 10,
+      "devicename": "Revolving Door 1",
+      "devicetype": "Security",
+      "devicenumber": 10011
+    },
+    {
+      "id": 11,
+      "devicename": "Revolving Door 2",
+      "devicetype": "Security",
+      "devicenumber": 10012
+    },
+    {
+      "id": 12,
+      "devicename": "Security Camera 1",
+      "devicetype": "Security",
+      "devicenumber": 10013
+    },
+    {
+      "id": 13,
+      "devicename": "Security Camera 2",
+      "devicetype": "Security",
+      "devicenumber": 10014
+    },
+    {
+      "id": 14,
+      "devicename": "Security Camera 3",
+      "devicetype": "Security",
+      "devicenumber": 10015
+    }
+]
