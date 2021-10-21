@@ -10,8 +10,20 @@ app.use(express.static('public'));
     res.sendFile(`${base}/welcome.html`);
   });
 
+  app.get('/registerdevice', (req, res) => {
+    res.sendFile(`${base}/register-device.html`);
+  });
+
   app.get('/deviceslist', (req, res) => {
     res.sendFile(`${base}/device-list.html`);
+  });
+
+  app.get('/userslist', (req, res) => {
+    res.sendFile(`${base}/userlist.html`);
+  });
+
+  app.get('/removedevice', (req, res) => {
+    res.sendFile(`${base}/removedevice.html`);
   });
 
   app.get('/aircondition', (req, res) => {

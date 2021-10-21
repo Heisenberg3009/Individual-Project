@@ -18,29 +18,56 @@ $.get(`${API_URL}/devices`)
 })
 
 $('#add-device').on('click', function() {
-    const user = $('#user').val();
-    const name = $('#name').val();
-    devices.push({ user, name });
-    localStorage.setItem('devices', JSON.stringify(devices));
-    location.href = 'device-list.html';
+  const deviceid = $('#deviceid').val();
+  const devicename = $('#devicename').val();
+  const devicetype = $('#devicetype').val();
+  const devicenumber = $('#devicenumber').val();
+  const body2 = {
+    deviceid,
+    devicename,
+    devicetype,
+    devicenumber,
+  };
+$.post(`${API_URL}/devices`, body2)
+.then(response => {
+  location.href = '/deviceslist';
+})
+.catch(error => {
+  console.error(`Error: ${error}`);
   });
+});
 
-  $.get(`${API_URL}/users`)
+$('#delete').on('click', function(){
+  // let id = $(this).attr("data-id");
+  const id =  $('#delete_id').val();
+  const body={id};
+   $.post(`${API_URL}/delete`,body) 
+   .then(response => {
+    location.reload(); 
+   })
+})
+
+ $.get(`${API_URL}/users`)
   .then(response=> {
     response.forEach(user=> {
-      if(user.id>0)
+      $('#users tbody').append(`
+    <tr>
+    <td>${user.name}</td>
+    <td>${user.age}</td>
+    <td>${user.city}</td>
+    <td>${user.phone}</td>
+    <td>${user.occupation}</td>
+    <td>${user.email}</td>
+    <td>${user.id}</td>
+    </tr>`
+    )
       {
         const song = user.song;
         const userID = user.id;
         $.post(`${MQTT_URL}/userpreferences`, { userID, song })
          .then(response => {
-         location.href = '/deviceslist';
         })
       }
     }
   )
 })
-.catch(error=>
-  {
-    console.error(`Error: ${error}`);
-  })

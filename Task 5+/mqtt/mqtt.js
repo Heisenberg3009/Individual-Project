@@ -67,6 +67,7 @@ app.post('/mqtt/userpreferences', (req, res) => {
     });
   });
 
+
 //post function to send manual commands 
 app.post('/mqtt/sendcommand', (req, res) => {
     const { deviceID, command }  = req.body;

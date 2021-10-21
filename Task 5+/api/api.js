@@ -55,6 +55,22 @@ app.get('/api/devices', (req, res) => {
     });
   });
 
+  app.post('/api/delete', function(req, res) 
+  {
+    Devices.findOneAndDelete({id:req.body.id}, function (err, Devices) {
+        if (err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            console.log("Removed Device : ", Devices);
+            console.log(req.body.id);
+        }
+   });
+    console.log("success");
+  });
+
 app.get('/api/users', (req, res) => {
     Users.find({}, (err, users) => {
         return err
